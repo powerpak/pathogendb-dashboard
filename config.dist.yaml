@@ -4,4 +4,4 @@ pathogendb:
   host: https://pathogendb.mssm.edu/
   auth:
     user: doej01
-    password: no
+    password: false
