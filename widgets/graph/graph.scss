@@ -1,0 +1,97 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #dc5945;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$tick-color:        rgba(0, 0, 0, 1);
+
+
+// ----------------------------------------------------------------------------
+// Widget-graph styles
+// ----------------------------------------------------------------------------
+.widget-graph {
+
+  background-color: $background-color;
+  position: relative;
+
+  .rickshaw_plot_area {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    bottom: 0px;
+  }
+  
+  .rickshaw_y_axis {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    bottom: 0px;
+    
+    .tick line {
+      stroke: rgba(0, 0, 0, 0.7);
+      stroke-width: 2px;
+      pointer-events: none;
+    }
+  }
+
+  svg {
+    position: absolute;
+    opacity: 0.5;
+    left: 0px;
+    top: 0px;
+  }
+
+  .title, .value {
+    position: relative;
+    z-index: 99;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .value {
+    
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .x_tick {
+    position: absolute;
+    bottom: 0;
+    
+    .title {
+      font-size: 20px;
+      color: $tick-color;
+      opacity: 0.5;
+      padding-bottom: 3px;
+    }
+    
+    .tick line {
+      stroke: rgba(0, 0, 0, 0.7);
+      stroke-width: 2px;
+      pointer-events: none;
+    }
+  }
+
+  .y_ticks {
+    font-size: 20px;
+    fill: $tick-color;
+    fill-opacity: 1;
+  }
+
+  .domain {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.7);
+    stroke-width: 2px;
+  }
+
+}
