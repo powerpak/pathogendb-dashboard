@@ -8,7 +8,7 @@ Uses the [Dashing framework](http://shopify.github.com/dashing).
 
 You'll need Ruby, [RubyGems](https://rubygems.org/), and [Bundler](http://bundler.io/) (all pre-installed on most Macs and modern Linuxes).
 
-1. Clone this repository somewhere.
+1. Clone this repository somewhere. `cd` into it.
 
 2. Copy `config.dist.yaml` to `config.yaml`. Edit `config.yaml` and set options as appropriate.
 
