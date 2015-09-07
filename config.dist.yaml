@@ -1,7 +1,7 @@
 msdw2_url: 'postgres://localhost/msdw2_improved'
 
 pathogendb:
-  host: https://pathogendb.mssm.edu/
+  base_url: https://pathogendb.mssm.edu/
   auth:
     user: doej01
     password: false
