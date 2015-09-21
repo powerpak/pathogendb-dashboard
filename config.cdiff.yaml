@@ -1,0 +1,13 @@
+msdw2_url: 'postgres://localhost/msdw2_improved'
+
+pathogendb:
+  base_url: https://pathogendb.mssm.edu/
+  auth:
+    user: 
+    password:
+
+cdiffr01:
+  csv_url: "https://pathogendb.mssm.edu/tStoolCollection.php?PME_sys_fl=0&PME_sys_fm=0&PME_sys_sfn[0]=-3&PME_sys_export=csv"
+  auth:
+    user: jon
+    password: doe 
